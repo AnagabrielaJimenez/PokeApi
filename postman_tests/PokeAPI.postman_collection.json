@@ -24,7 +24,54 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "GetPokemon",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pokemons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pokemons"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Jun 2024 20:45:15 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Pikachu\",\n        \"type\": \"Electric\",\n        \"level\": 25,\n        \"hp\": 35,\n        \"attack\": 55,\n        \"defense\": 40\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Charmander\",\n        \"type\": \"Fire\",\n        \"level\": 10,\n        \"hp\": 39,\n        \"attack\": 52,\n        \"defense\": 43\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Squirtle\",\n        \"type\": \"Water\",\n        \"level\": 8,\n        \"hp\": 44,\n        \"attack\": 48,\n        \"defense\": 65\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Bulbasaur\",\n        \"type\": \"Grass\",\n        \"level\": 12,\n        \"hp\": 45,\n        \"attack\": 49,\n        \"defense\": 49\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Jigglypuff\",\n        \"type\": \"Normal\",\n        \"level\": 15,\n        \"hp\": 115,\n        \"attack\": 45,\n        \"defense\": 20\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Mewtwo\",\n        \"type\": \"Psychic\",\n        \"level\": 70,\n        \"hp\": 106,\n        \"attack\": 110,\n        \"defense\": 90\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "http://localhost:8080/api/pokemons/1",
@@ -45,7 +92,55 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://localhost:8080/api/pokemons/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pokemons/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pokemons",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Jun 2024 20:45:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Pikachu\",\n    \"type\": \"Electric\",\n    \"level\": 25,\n    \"hp\": 35,\n    \"attack\": 55,\n    \"defense\": 40\n}"
+				}
+			]
 		},
 		{
 			"name": "http://localhost:8080/api/pokemons",
@@ -74,7 +169,63 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://localhost:8080/api/pokemons",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mewtwo\",\r\n    \"type\": \"Psychic\",\r\n    \"level\": 70,\r\n    \"hp\": 106,\r\n    \"attack\": 110,\r\n    \"defense\": 90\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/pokemons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pokemons"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Jun 2024 20:46:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 10,\n    \"name\": \"Mewtwo\",\n    \"type\": \"Psychic\",\n    \"level\": 70,\n    \"hp\": 106,\n    \"attack\": 110,\n    \"defense\": 90\n}"
+				}
+			]
 		},
 		{
 			"name": "http://localhost:8080/api/pokemons/8",
@@ -104,7 +255,64 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://localhost:8080/api/pokemons/8",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gyarados\",\r\n    \"type\": \"Water/Flying\",\r\n    \"level\": 55,\r\n    \"hp\": 95,\r\n    \"attack\": 125,\r\n    \"defense\": 79\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/pokemons/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pokemons",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Jun 2024 20:46:40 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 10,\n    \"name\": \"Gyarados\",\n    \"type\": \"Water/Flying\",\n    \"level\": 55,\n    \"hp\": 95,\n    \"attack\": 125,\n    \"defense\": 79\n}"
+				}
+			]
 		},
 		{
 			"name": "http://localhost:8080/api/pokemons/6",
@@ -125,7 +333,51 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "http://localhost:8080/api/pokemons/6",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pokemons/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pokemons",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Jun 2024 20:47:03 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
 		}
 	]
 }
