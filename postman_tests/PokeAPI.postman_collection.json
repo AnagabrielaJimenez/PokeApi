@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "723a1ad0-78f6-4afd-96ba-eef3f23178c8",
+		"name": "PokeAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12108484"
+	},
+	"item": [
+		{
+			"name": "GetPokemon",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
